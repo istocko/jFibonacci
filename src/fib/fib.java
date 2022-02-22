@@ -80,7 +80,7 @@ public class fib {
 			return 0;
 		}
 		
-		System.out.println("fibrec nth:"+nth+" value from cache:"+cache[nth]);
+		//System.out.println("fibrec nth:"+nth+" value from cache:"+cache[nth]);
 		if (cache[nth] != 0) {
 			return cache[nth];
 		}
