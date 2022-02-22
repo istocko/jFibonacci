@@ -25,6 +25,13 @@ public class fib {
 		System.out.println("time "+diff);
 		begin = System.currentTimeMillis();
 		
+		//StringBuilder sb = new StringBuilder();
+		for (int i = 0 ; i <= 15 ; i++)
+		{
+			System.out.print(cache[i]+",");
+		}
+		System.out.println("");
+		System.out.println("Finish");
 
 	}
 	
@@ -73,13 +80,14 @@ public class fib {
 			return 0;
 		}
 		
+		System.out.println("fibrec nth:"+nth+" value from cache:"+cache[nth]);
 		if (cache[nth] != 0) {
 			return cache[nth];
 		}
 	
 		
 		
-		int result = getnthfibonaccirecursive(nth - 1) + getnthfibonaccirecursive(nth -2);
+		int result = getnthfibonaccirecursivecache(nth - 1) + getnthfibonaccirecursivecache(nth -2);
 		cache[nth] = result;
 		return result;
 	}

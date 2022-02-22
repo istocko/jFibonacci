@@ -20,8 +20,11 @@ class JUnitExample {
 	}
 	
 	@Test
-	void testFIBmaxinputby5deconds() {
+	void testFIBmaxinputby5seconds() {
 		assertEquals(1134903170, fib.getnthfibonaccirecursive(45));
 	}
+	
+	
+
 
 }
